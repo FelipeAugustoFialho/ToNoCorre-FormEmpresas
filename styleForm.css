@@ -1,28 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
 
 }
-body{
-   
+
+body {
+    
+ background-image: url('./backgroundImage.png');
+      
 }
-h1 ,h2{
+
+h1,
+h2 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.titles{
 
-justify-content: center;
-text-align: center;
- 
+.titles {
+
+    justify-content: center;
+    text-align: center;
+    background-color: #FFFFFF;
+
 }
-.form{
-    
+
+.form {
+
     display: flex;
-    text-align: center;    
+    text-align: center;
     justify-content: center;
     width: 600px;
     border: 4px solid black;
@@ -30,34 +39,72 @@ text-align: center;
     margin-top: 50px;
     gap: 10px;
     align-items: center;
-    background-color:white
-  
+    background-color: white
 }
 
 
-input{
-margin-bottom: 10px;
-margin-top: 10px;
- 
+.bloco1 {
+    display: table-caption;
+    margin-left: 173px;
 }
-select{
+.bloco2{
+        display: table;
+    margin-left: 173px;
+    margin-bottom: 15px;
+}
+
+input {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"] {
+        width: 300px;
+        /* Tamanho padrão */
+        padding: 5px;
+        box-sizing: border-box;
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+    }
+
+}
+
+textarea {
+    width: 300px;
+    /* você pode ajustar o tamanho */
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+select {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-option{
+
+option {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-p{
+
+p {
     font-weight: bold;
     margin-bottom: 5px;
 }
-.subTitle{
+
+.subTitle {
     font-size: 25px;
+    margin-top: 20px;
 }
 
-.button{
-    background:linear-gradient(#5de0e6,#004aad);
+
+.button {
+    background: linear-gradient(#5de0e6, #004aad);
     width: 140px;
     height: 40px;
     border-radius: 50px;
@@ -67,8 +114,10 @@ p{
     color: black;
     font-weight: bolder;
 }
-.button:hover{  text-decoration: none;
+
+.button:hover {
+    text-decoration: none;
     color: #FFFFFF;
     cursor: pointer;
     border: #FFFFFF
-    }
+}
